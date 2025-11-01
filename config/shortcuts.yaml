@@ -1,0 +1,14 @@
+os: windows
+apps:
+  meet:
+    mic: ["ctrl", "d"]
+    cam: ["ctrl", "e"]
+    window_hints:
+      - ".meet.google.com"
+      - "Meet -"
+      - "Google Meet"
+      - "Meet —"
+      - "Meet:"
+      - "Microsoft Edge"
+      - "Google Chrome"
+      - "Chrome"

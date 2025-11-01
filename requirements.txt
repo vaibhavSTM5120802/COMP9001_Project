@@ -1,0 +1,22 @@
+# requirements.txt — Meet Controller (Voice + Gesture) on Windows
+# Exact packages inferred from your codebase.
+
+# ---- Core ----
+numpy>=1.24                                                             # common dep for cv2/mediapipe
+opencv-python>=4.9                                                      # cv2  (used in gesture)
+mediapipe>=0.10                                                         # hand landmarks (gesture)
+
+# ---- UI automation & window focus ----
+pyautogui>=0.9                                                          # send hotkeys
+Pillow>=10.0                                                            # pyautogui image backend
+pygetwindow>=0.0.9                                                      # list/activate windows
+pywin32>=306; platform_system=="Windows"                                # win32gui/win32con (focus)
+pywinauto>=0.6.8; platform_system=="Windows"                            # alternate focus path
+comtypes>=1.2; platform_system=="Windows"                               # helper for pywinauto on some setups
+
+# ---- YAML config ----
+PyYAML>=6.0                                                             # read config/shortcuts.yaml
+
+# ---- Voice recognition ----
+sounddevice>=0.4                                                        # mic stream
+vosk>=0.3                                                               # offline speech recognizer
